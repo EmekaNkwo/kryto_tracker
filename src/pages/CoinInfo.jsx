@@ -32,8 +32,8 @@ const CoinInfo = () => {
 
   return (
     <Container>
-      <div className="flex  md:flex-col md:items-center">
-        <div className="lg:w-[50%] md:w-full flex flex-col md:items-center mt-[15px] ">
+      <div className="flex flex-col items-center justify-center">
+        <div className="lg:w-[50%] w-full flex flex-col items-center mt-[15px] ">
           <img
             src={coin?.image?.large}
             alt={coin?.name}
@@ -51,7 +51,7 @@ const CoinInfo = () => {
               ? coin?.description?.en?.slice(0, 500) + "..."
               : coin?.description?.en}
           </Typography>
-          <div className="self-start px-[25px] gap-2 pt-10 w-full md:flex md:justify-around sm:flex-col sm:items-center xs:items-start">
+          <div className="self-start px-[25px] gap-2 pt-10 w-full flex  md:justify-around flex-col items-center ">
             <span className="flex">
               <Typography variant="h5" className={header}>
                 Rank:
