@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import ReactHtmlParser from "react-html-parser";
 
 import { SingleCoin } from "../services/apiLinks";
 import { numberWithCommas } from "../components/CoinTable";
@@ -47,7 +46,10 @@ const CoinInfo = () => {
             variant="subtitle1"
             className="w-full font-quicksand px-[25px] pt-0 pb-[15px] mt-2 text-center "
           >
-            {ReactHtmlParser(coin?.description.en.split(". ")[0])}.
+            {/* {ReactHtmlParser(coin?.description.en.split(". ")[0])}. */}
+            {coin?.description?.en?.length > 500
+              ? coin?.description?.en?.slice(0, 500) + "..."
+              : coin?.description?.en}
           </Typography>
           <div className="self-start px-[25px] gap-2 pt-10 w-full md:flex md:justify-around sm:flex-col sm:items-center xs:items-start">
             <span className="flex">
