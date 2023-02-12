@@ -29,7 +29,7 @@ const CoinData = ({ coin }) => {
 
   return (
     <>
-      <div className=" lg:w-[75%] flex flex-col items-center justify-center lg:mt-[25px] p-[40px] sm:w-full sm:mt-4 md:px-[20px] md:pt-0">
+      <div className=" lg:w-[75%] xs:w-full flex flex-col items-center justify-center lg:mt-[25px] p-[40px] sm:w-full sm:mt-4 md:px-[20px] md:pt-0">
         {!historicData | (flag === false) ? (
           <CircularProgress
             style={{ color: "blue" }}
@@ -65,7 +65,7 @@ const CoinData = ({ coin }) => {
                 },
               }}
             />
-            <div className="flex mt-[20px] justify-around w-full">
+            <div className="flex xs:flex-col md:flex-row xs:w-[70%] xs:gap-2 xs:items-center mt-[20px] justify-around w-full">
               {chartDays?.map((day) => (
                 <Button
                   key={day?.value}

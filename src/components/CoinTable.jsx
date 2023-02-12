@@ -63,7 +63,7 @@ export default function CoinTable() {
 
   return (
     <>
-      <Container className="text-center ">
+      <Container className="text-center xs:overflow-x-scroll ">
         <Typography
           variant="h4"
           style={{ marginBottom: 20, fontFamily: "Quicksand" }}

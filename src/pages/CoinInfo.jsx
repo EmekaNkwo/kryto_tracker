@@ -32,7 +32,7 @@ const CoinInfo = () => {
 
   return (
     <Container>
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center ">
         <div className="lg:w-[50%] w-full flex flex-col items-center mt-[15px] ">
           <img
             src={coin?.image?.large}

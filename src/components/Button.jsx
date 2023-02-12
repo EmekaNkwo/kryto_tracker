@@ -7,7 +7,7 @@ const SelectButton = ({ children, selected, onClick }) => {
         color: selected ? "#fff" : "",
         fontWeight: selected ? 700 : 500,
       }}
-      className="border-2 w-[22%] border-blue-600 rounded-md py-[10px] px-[20px] font-quicksand cursor-pointer"
+      className="border-2 lg:w-[22%] md:w-[50%] xs:text-center xs:w-[70%]  border-blue-600 rounded-md py-[10px] px-[20px] font-quicksand cursor-pointer"
     >
       {children}
     </span>
