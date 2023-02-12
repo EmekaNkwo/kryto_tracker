@@ -36,15 +36,10 @@ export default function CoinTable() {
 
   const fetchCoins = async () => {
     setLoading(true);
-    // const { data } = await axios.get(CoinList(currency));
-    try {
-      const { data } = await axios.get(CoinList(currency), {
-        timeout: 5000,
-      });
-      setCoins(data);
-    } catch (error) {
-      console.error(error);
-    }
+    const { data } = await axios.get(CoinList(currency));
+
+    setCoins(data);
+
     setLoading(false);
   };
 
