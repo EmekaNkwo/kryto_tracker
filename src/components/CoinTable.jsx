@@ -24,7 +24,7 @@ export function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-export default function CoinTable() {
+function CoinTable() {
   const [coins, setCoins] = useState([]);
   const [loading, setLoading] = useState(false);
   const [search, setSearch] = useState("");
@@ -171,3 +171,5 @@ export default function CoinTable() {
     </>
   );
 }
+
+export const MemorizedTable = React.memo(CoinTable);

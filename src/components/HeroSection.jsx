@@ -1,6 +1,6 @@
 import { Container, Typography } from "@mui/material";
 
-import CoinCarousel from "./CoinCarousel";
+import { MemorizedCarousel } from "./CoinCarousel";
 
 function HeroSection() {
   return (
@@ -28,7 +28,8 @@ function HeroSection() {
             Get all the Info regarding your favorite Crypto Currency
           </Typography>
         </div>
-        <CoinCarousel />
+
+        <MemorizedCarousel />
       </Container>
     </>
   );

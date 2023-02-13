@@ -1,4 +1,5 @@
 import axios from "axios";
+import React from "react";
 import { useEffect, useState } from "react";
 import AliceCarousel from "react-alice-carousel";
 import { Link } from "react-router-dom";
@@ -76,4 +77,4 @@ const CoinCarousel = () => {
   );
 };
 
-export default CoinCarousel;
+export const MemorizedCarousel = React.memo(CoinCarousel);

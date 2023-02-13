@@ -1,11 +1,13 @@
 import React from "react";
-import { CoinTable, HeroSection } from "../components";
+import { HeroSection } from "../components";
+import { MemorizedTable } from "../components/CoinTable";
 
 const Home = () => {
   return (
     <div className="flex flex-col gap-2">
       <HeroSection />
-      <CoinTable />
+
+      <MemorizedTable />
     </div>
   );
 };
